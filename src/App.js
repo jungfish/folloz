@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Follow from './Follow';
-import Share from './Share';
 
 class App extends Component {
     render() {

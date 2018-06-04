@@ -10,7 +10,7 @@ export default class Follow extends Component {
         return (
             <div className="Panel">
                 <div className="Header">
-                    <img src="//cdn.shopify.com/s/files/1/2378/9469/files/Atelier_unes_1_-_black_-_big_x60.png?v=1511190463"
+                    <img src="http://recommander.atelier-unes.com/atelier-unes-logo.png"
                          alt="follow"/>
                 </div>
                 <div className="page-wrapper">
@@ -50,6 +50,7 @@ export default class Follow extends Component {
                     </div>
                   </div>
                 </div>
+                <div className="footer"></div>
             </div>
         );
     }
