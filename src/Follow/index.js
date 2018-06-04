@@ -50,7 +50,6 @@ export default class Follow extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="footer"></div>
             </div>
         );
     }
@@ -94,9 +93,11 @@ const TwitterShare = () => {
     return (
         <div>
             <a className="twitter-share-button"
-              data-text="custom share text"
+              data-text="Mes amis d'Atelier Unes lancent une nouvelle marque de prêt-à-porter féminin, éco-friendly et collaborative toute belle ! 💃
+                        Après 6 mois de travail, la collection Prendre son Envol se compose d'une Robe et d'une Blouse, disponible en précommande sur Ulule à prix réduits:
+                        Je vous assure, ça vaut le coup d'oeil ;)"
               data-url="http://bit.ly/Prendre-son-envol"
-              data-hashtags="example,demo"
+              data-hashtags="mode,social,ethique,ulule"
                href="http://bit.ly/Prendre-son-envol"
                lang="fr">
                Tweet
@@ -166,7 +167,8 @@ const Pinterest = () => {
 
 const Gmail = () => {
     return (
-      <a href="mailto:Eryka.Adams@Clickdimensions.com?bcc=julie.patrick@clickdimensions.com&subject=RSVP%20for%20New%20Year's%20Eve%20Party%20&body=Hi%20Bob,%0d%0dI%20would%20like%20to%20RSVP%20to%20your%20party%20invitation.%20Here%20are%20my%20details:%0d%0dName:%20Eryka%20Adams%0dNumber%20of%20Guest:%0d" rel="EMAIL">
+      <a href="mailto:violette@atelier-unes.com?&subject=Soutien%20Atelier%20Unes%20avec%20moi%20%F0%9F%92%96%20!
+      &body=Mes%20amis%20d%27Atelier%20Unes%20lancent%20une%20nouvelle%20marque%20de%20pr%C3%AAt-%C3%A0-porter%20f%C3%A9minin%2C%20%C3%A9co-friendly%20et%20collaborative%20toute%20belle%20!%20%F0%9F%92%83%0A%0A%0AApr%C3%A8s%206%20mois%20de%20travail%2C%20la%20collection%20%22Prendre%20son%20Envol%22%20se%20compose%20d%27une%20Robe%20et%20d%27une%20Blouse%2C%20disponible%20en%20pr%C3%A9commande%20sur%20Ulule%20%C3%A0%20prix%20r%C3%A9duits%3A%20%0A%0Ahttp%3A%2F%2Fbit.ly%2Fprendre-son-envol-ulule%0A%0A%0AJe%20vous%20assure%2C%20%C3%A7a%20vaut%20le%20coup%20d%27oeil%20%3B)" rel="EMAIL">
       <img src={email} className="email" alt="logo" />
       </a>
     )
