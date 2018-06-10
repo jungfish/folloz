@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import PrevNext from '../components/PrevNext/index';
 import heart from '../heart.svg';
+import email from '../email.svg';
 import './style.css';
 
 export default class Follow extends Component {
@@ -20,8 +20,10 @@ export default class Follow extends Component {
                   </div>
                   <h2 className="Description main">
                       <i>
-                          Chaque j''aime compte. Cela montre à tes amis que tu penses que nous faisons quelque chose de bien.
-                          Cela permet aussi de voir que les gens nous font confiance
+                          Chaque soutien compte :
+                          Cela montre à tes amis que tu approuves ce que nous faisons.
+                          Cela permet aussi de voir que les gens nous font confiance !
+                          Il n'y a pas de secret c'est uniquement grâce à ton aide que nous pouvons toucher d'autres personnes.
                       </i>
                   </h2>
                   <p className="Description secondary">
@@ -34,8 +36,6 @@ export default class Follow extends Component {
                         <Twitter />
                         <span>+</span>
                         <LinkedIn />
-                        <span>+</span>
-                        <Pinterest />
                     </div>
                   </div>
                   <div className="share">
@@ -166,7 +166,7 @@ const Pinterest = () => {
 const Gmail = () => {
     return (
       <a href="mailto:Eryka.Adams@Clickdimensions.com?bcc=julie.patrick@clickdimensions.com&subject=RSVP%20for%20New%20Year's%20Eve%20Party%20&body=Hi%20Bob,%0d%0dI%20would%20like%20to%20RSVP%20to%20your%20party%20invitation.%20Here%20are%20my%20details:%0d%0dName:%20Eryka%20Adams%0dNumber%20of%20Guest:%0d" rel="EMAIL">
-      here
+      <img src={email} className="email" alt="logo" />
       </a>
     )
 }

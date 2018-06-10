@@ -19,6 +19,7 @@ body {
     /*max-width: 1200px;*/
 }
 
+
 .page-wrapper {
   opacity: 0.8;
   /*width: 100vw;*/
@@ -43,13 +44,21 @@ body {
     background-color: #faf9f6;
     margin-bottom: 1em;
 }
+
 .Panel .Action {
     /*display: flex;*/
     align-items: center;
     max-width: 600px;
-    padding:10px;
+    /*padding:10px;*/
     /*margin-top: 3em;*/
 }
+.Panel .Action h1 {
+    /*display: flex;*/
+    font-family: 'Roboto', sans-serif;
+    /*padding:10px;*/
+    /*margin-top: 3em;*/
+}
+
 .Panel .Action img {
     width: 100px;
 }
@@ -71,7 +80,11 @@ body {
     /*background-color: #544565;*/
     width: 100vw;
     max-width: 600px;
-    border: 1px solid white;
+    border: 2px solid white;
+}
+
+.Panel .email {
+  width: 20px;
 }
 
 .Panel .Buttons > * {
