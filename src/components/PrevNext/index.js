@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import routes from '../../routes';
+import './style.css';
 
 type Props = {
     pathname: string
@@ -22,9 +23,13 @@ export default class PrevNext extends Component<Props> {
             next = routeIndex + 1;
         }
         return (
-            <div>
-                <Link to={routes[previous]}>previous</Link>
-                <Link to={routes[next]}>next</Link>
+            <div className="PrevNext">
+                <button>
+                    <Link to={routes[previous]}>previous</Link>
+                </button>
+                <button>
+                    <Link to={routes[next]}>next</Link>
+                </button>
             </div>
         )
     }

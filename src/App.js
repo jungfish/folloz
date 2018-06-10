@@ -4,8 +4,6 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Follow from './Follow';
 import Share from './Share';
 
-import logo from './logo.svg';
-
 class App extends Component {
     render() {
         return (

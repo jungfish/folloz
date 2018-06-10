@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 import PrevNext from '../components/PrevNext/index';
 import heart from '../heart.svg';
@@ -9,13 +8,14 @@ export default class Follow extends Component {
 
     render() {
         return (
-            <div className="Follow">
+            <div className="Panel">
                 <div className="Header">
-                    <img src="//cdn.shopify.com/s/files/1/2378/9469/files/Atelier_unes_1_-_black_-_big_x120.png?v=1511190463" />
+                    <img src="//cdn.shopify.com/s/files/1/2378/9469/files/Atelier_unes_1_-_black_-_big_x120.png?v=1511190463"
+                         alt="follow"/>
                 </div>
                 <div className="Action">
                     <img src={heart} className="heart" alt="logo" />
-                    <div>Show your love</div>
+                    <div>Follow your love</div>
                 </div>
                 <p className="Description main">
                     <i>
@@ -35,6 +35,7 @@ export default class Follow extends Component {
                     <LinkedIn />
                     <Pinterest />
                 </div>
+                <PrevNext pathname="follow" />
             </div>
         );
     }
