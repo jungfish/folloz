@@ -1,4 +1,6 @@
 const routes = [
+    'suivre',
+    'partager',
     'follow',
     'share'
 ];

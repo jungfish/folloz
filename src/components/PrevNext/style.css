@@ -1,3 +1,44 @@
 .PrevNext {
-    
+  margin-top: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.PrevNext button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  margin: 1em;
+}
+
+.PrevNext button a {
+  font-family: 'Roboto', sans-serif;
+  -moz-user-select: "none";
+  -ms-user-select: "none";
+  -webkit-user-select: "none";
+  user-select: "none";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: auto;
+
+  border-radius: 0;
+  color: white;
+  border: 2px solid #df998a;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  line-height: 2.2;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: outline 0.1s linear;
+  box-sizing: border-box;
+}
+
+.PrevNext button a:hover {
+    outline: 4px solid #df998a;
 }

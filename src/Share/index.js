@@ -9,7 +9,7 @@ export default class Share extends Component {
         return (
             <div className="Panel">
                 <div className="Header">
-                    <img src="//cdn.shopify.com/s/files/1/2378/9469/files/Atelier_unes_1_-_black_-_big_x120.png?v=1511190463"
+                    <img src="//cdn.shopify.com/s/files/1/2378/9469/files/Atelier_unes_1_-_black_-_big_x60.png?v=1511190463"
                          alt="share" />
                 </div>
                 <div className="Action">

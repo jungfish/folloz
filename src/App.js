@@ -10,9 +10,9 @@ class App extends Component {
             <div className="App">
                 <BrowserRouter>
                     <Switch>
-                        <Route path="/follow" component={Follow} />
-                        <Route path="/share" component={Share} />
-                        <Redirect to="/follow" />
+                        <Route path="/suivre" component={Follow} />
+                        <Route path="/partager" component={Share} />
+                        <Redirect to="/suivre" />
                     </Switch>
                 </BrowserRouter>
             </div>

@@ -10,12 +10,22 @@ body {
 }
 
 .Panel {
-    /* background-image: url("//cdn.shopify.com/s/files/1/2378/9469/files/16052018-DSCF3601_1200x.jpg?v=1527583599");
+    background-image: url("https://cdn.shopify.com/s/files/1/2378/9469/files/Atelier_Unes_-_Prendre_Son_Envol-_Bandeau-16_9-rose.jpg?16868861832563253671");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 600px;
-    width: 100vw;
-    max-width: 1200px; */
+    background-size: cover;
+    height: 800px;
+    color: white;
+    /*width: 1000vw;*/
+    /*max-width: 1200px;*/
+}
+
+.page-wrapper {
+  opacity: 0.8;
+  /*width: 100vw;*/
+  background-color: #df998a;
+  text-align: center;
+  margin: 1em;
+  padding: 1em 0 1em 0;
 }
 
 .Panel {
@@ -29,13 +39,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 80px;
     background-color: #faf9f6;
+    margin-bottom: 1em;
 }
 .Panel .Action {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     max-width: 600px;
+    padding:10px;
+    /*margin-top: 3em;*/
 }
 .Panel .Action img {
     width: 100px;
@@ -45,14 +58,23 @@ body {
 }
 .Panel .Description {
     max-width: 600px;
+    /*margin-top: 1em;*/
+    padding:10px;
 }
 .Panel .Buttons {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    /*background-color: #544565;*/
+    width: 100vw;
+    max-width: 600px;
+    border: 1px solid white;
 }
 
 .Panel .Buttons > * {
-    margin: 10px;
+    margin: 5px;
+    /*padding:1em;*/
 }

@@ -24,7 +24,7 @@ export default class PrevNext extends Component<Props> {
         }
         return (
             <div className="PrevNext">
-                <button>
+                <button className="secondary-button">
                     <Link to={routes[previous]}>previous</Link>
                 </button>
                 <button>
