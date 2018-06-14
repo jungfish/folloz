@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import heart from '../heart.svg';
-import email from '../email.svg';
+import email from '../email-2.svg';
 import './style.css';
 
 export default class Follow extends Component {
@@ -16,8 +16,59 @@ export default class Follow extends Component {
                 <div className="page-wrapper">
                   <div className="Action">
                       <img src={heart} className="heart" alt="logo" />
-                      <h1>Montre-nous ton soutien !</h1>
+                      <h1>Ton soutien est la clé de notre succès !</h1>
                   </div>
+                  <div className="Description secondary">
+                    <p>
+                      <u><i>On t'as simplifié la tache : </i></u>
+                    </p>
+                    <p className="Description secondary">
+                        <i>💞 Clique sur tous les boutons ci-dessous pour nous aider à promouvoir notre marque 💞</i>
+                    </p>
+                  </div>
+
+                  <div className="Buttons">
+                      <div className ="action-text">
+                        <strong>Tu nous suis ? 👍🏻</strong>
+                      </div>
+                      <Facebook />
+                      <span>+</span>
+                      <Twitter />
+                      <span>+</span>
+                      <LinkedIn />
+                  </div>
+
+                  <div className="Buttons">
+                      <div className ="action-text">
+                      <strong>Parle de nous ! 💃</strong>
+                      </div>
+                      <FacebookShare />
+                      <span>+</span>
+                      <TwitterShare />
+                      <span>+</span>
+                      <LinkedInShare />
+                      <span>+</span>
+                      <Gmail />
+                  </div>
+                  <div className="Buttons">
+                      <div className ="action-text">
+                      <strong>On t'a écris un petit texte à copier coller 👀 </strong>
+                      </div>
+                      <textarea cols="50" rows="6" value ="Mes amis d'Atelier Unes lancent une nouvelle marque de prêt-à-porter féminin, éco-friendly et collaborative toute belle ! 💃
+                      Après 6 mois de travail, la collection Prendre son Envol se compose d'une Robe et d'une Blouse, disponible en précommande sur Ulule à prix réduits:
+                      http://bit.ly/prendre-son-envol-ulule
+                      Je vous assure, ça vaut le coup d'oeil ;)"/>
+                      <CopyToClipboard text="
+                        Mes amis d'Atelier Unes lancent une nouvelle marque de prêt-à-porter féminin, éco-friendly et collaborative toute belle ! 💃&#013;&#010;&#013;&#010;
+                      Après 6 mois de travail, la collection Prendre son Envol se compose d'une Robe et d'une Blouse, disponible en précommande sur Ulule à prix réduits:&#013;&#010;&#013;&#010;
+                        http://bit.ly/prendre-son-envol-ulule &#013;&#010;&#013;&#010;
+                        Je vous assure, ça vaut le coup d'oeil ;)!&#013;&#010;&#013;&#010;
+                      ">
+                        <button>Copier Texte</button>
+                      </CopyToClipboard>
+                  </div>
+
+
                   <h2 className="Description main">
                       <i>
                           Chaque soutien compte :
@@ -26,29 +77,6 @@ export default class Follow extends Component {
                           Il n'y a pas de secret c'est uniquement grâce à ton aide que nous pouvons toucher d'autres personnes.
                       </i>
                   </h2>
-                  <p className="Description secondary">
-                      <i>Clique sur tous les boutons ci-dessous pour nous aider à promouvoir notre marque</i>
-                  </p>
-                  <div className="like">
-                    <div className="Buttons">
-                        <Facebook />
-                        <span>+</span>
-                        <Twitter />
-                        <span>+</span>
-                        <LinkedIn />
-                    </div>
-                  </div>
-                  <div className="share">
-                    <div className="Buttons">
-                        <FacebookShare />
-                        <span>+</span>
-                        <TwitterShare />
-                        <span>+</span>
-                        <LinkedInShare />
-                        <span>+</span>
-                        <Gmail />
-                    </div>
-                  </div>
                 </div>
             </div>
         );
@@ -93,9 +121,9 @@ const TwitterShare = () => {
     return (
         <div>
             <a className="twitter-share-button"
-              data-text="Mes amis d'Atelier Unes lancent une nouvelle marque de prêt-à-porter féminin, éco-friendly et collaborative toute belle ! 💃
-                        Après 6 mois de travail, la collection Prendre son Envol se compose d'une Robe et d'une Blouse, disponible en précommande sur Ulule à prix réduits:
-                        Je vous assure, ça vaut le coup d'oeil ;)"
+              data-text="Mes amis d'@atelier_unes lancent une nouvelle marque de prêt-à-porter féminin, éco-friendly et collaborative toute belle ! 💃&#013;&#010;&#013;&#010;
+              Découvrez leur Robe et Blouse à prix réduits.&#013;&#010;&#013;&#010;
+              Ca vaut le coup d'oeil ;)&#013;&#010;&#013;&#010;"
               data-url="http://bit.ly/Prendre-son-envol"
               data-hashtags="mode,social,ethique,ulule"
                href="http://bit.ly/Prendre-son-envol"
